@@ -15,6 +15,49 @@ public class Categoria {
 
     @OneToMany(mappedBy = "categoria")
     private List<Mercadoria> mercadorias;
+    // construtores
+
+    public Categoria() {
+    }
+
+    public Categoria(UUID id, String nome, String descricao, List<Mercadoria> mercadorias) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.mercadorias = mercadorias;
+    }
+    //getters e setters
 
 
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public List<Mercadoria> getMercadorias() {
+        return mercadorias;
+    }
+
+    public void setMercadorias(List<Mercadoria> mercadorias) {
+        this.mercadorias = mercadorias;
+    }
 }
