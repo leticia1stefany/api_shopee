@@ -2,18 +2,22 @@ package com.shoppee.api.entity;
 
 import jakarta.persistence.*;
 
+import java.util.List;
 import java.util.UUID;
 
 @Entity
 @Table(name = "fornecedor")
 public class Fornecedor {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY,
+    @GeneratedValue(strategy = GenerationType.AUTO,
             generator = "UUID")
     private UUID id;
     private String nome;
     private String contato;
     private String endereco;
+
+    @OneToMany(mappedBy = "fornecedor")
+    private List<Mercadoria> mercadorias;
     // construtores
 
     public Fornecedor() {

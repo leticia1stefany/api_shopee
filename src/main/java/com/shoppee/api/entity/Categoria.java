@@ -8,7 +8,8 @@ import java.util.UUID;
 @Entity
 public class Categoria {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO, generator = "UUID")
+    @GeneratedValue(strategy = GenerationType.AUTO,
+            generator = "UUID")
     private UUID id;
     private String nome;
     private String descricao;
