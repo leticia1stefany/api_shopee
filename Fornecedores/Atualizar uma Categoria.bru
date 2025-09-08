@@ -1,0 +1,23 @@
+meta {
+  name: Atualizar uma Categoria
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/fornecedor/eaab5c4f-b643-43f5-9566-83883d3bc944
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+      "nome": "Nike",
+      "contato": "4898564245",
+      "endereco": "Rua California USA"
+    }
+}
+
+settings {
+  encodeUrl: true
+}

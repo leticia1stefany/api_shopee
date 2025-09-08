@@ -1,0 +1,23 @@
+meta {
+  name: Salvar uma Categoria
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/api/fornecedor
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nome":"Nike",
+    "contato":"4898564236",
+    "endereco":"Rua California USA"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

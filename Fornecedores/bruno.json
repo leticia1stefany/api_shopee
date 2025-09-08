@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "Fornecedores",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
