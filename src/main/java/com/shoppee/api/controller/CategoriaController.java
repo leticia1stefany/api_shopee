@@ -18,7 +18,7 @@ public class CategoriaController {
     //listar todas as categorias
     @GetMapping
     public List<CategoriaDto> findAll() {
-        return service.findAll();;
+        return service.findAll();
     }
     //buscar uma categoria por id
     @GetMapping("/{id}")
@@ -38,9 +38,9 @@ public class CategoriaController {
         return service.update(id, dto);
     }
     //deletar uma categoria por id
-    @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable UUID id) {
-        service.deleteById(id);
-    }
+//    @DeleteMapping("/{id}")
+//    public void deleteById(@PathVariable UUID id) {
+//        service.deleteById(id);
+//    }
 
 }

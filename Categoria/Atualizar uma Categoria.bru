@@ -1,0 +1,22 @@
+meta {
+  name: Atualizar uma Categoria
+  type: http
+  seq: 5
+}
+
+put {
+  url: http://localhost:8080/api/categoria/4c06e5a8-d2cb-4aaf-a825-d040169823fc
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "nome":"Eletrodomésticos",
+    "descricao":"todos eletros"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
