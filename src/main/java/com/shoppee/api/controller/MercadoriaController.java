@@ -1,6 +1,4 @@
 package com.shoppee.api.controller;
-
-import com.shoppee.api.dto.FornecedoresCreateDTO;
 import com.shoppee.api.dto.MercadoriaDTO;
 import com.shoppee.api.service.MercadoriaService;
 import org.springframework.beans.factory.annotation.Autowired;

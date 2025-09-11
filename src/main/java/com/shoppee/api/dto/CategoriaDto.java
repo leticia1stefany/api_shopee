@@ -1,8 +1,11 @@
 package com.shoppee.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class CategoriaDto {
     private String nome;
     private String descricao;
+    @JsonIgnore
 
     //construtores
 
@@ -13,9 +16,6 @@ public class CategoriaDto {
         this.nome = nome;
         this.descricao = descricao;
     }
-    //getters e setters
-
-
     public String getNome() {
         return nome;
     }

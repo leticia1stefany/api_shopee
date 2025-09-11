@@ -1,9 +1,12 @@
 package com.shoppee.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class FornecedoresCreateDTO {
     private String nome;
     private String contato;
     private String endereco;
+    @JsonIgnore
 
     public FornecedoresCreateDTO() {
     }
