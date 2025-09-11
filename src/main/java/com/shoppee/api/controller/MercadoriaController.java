@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/mercadoria")
 public class MercadoriaController {
 @Autowired
 private MercadoriaService service;
